@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var xhr = new XMLHttpRequest()
+    xhr.open('GET', 'time.php')
+    xhr.send(null)
+    xhr.onload = function () {
+        console.log(this.readyState)
+        console.log(this.responseText)
+    }
+</script>
+
+</body>
+</html>
